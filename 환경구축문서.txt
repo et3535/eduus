@@ -1,0 +1,18 @@
+C:\Users\kwan\Desktop\nodepjt
+
+https://github.com/et3535/eduus.git
+$ node --version
+$ npm --version
+npm i -g npm to update
+
+$ npm install express -g
+
+$ npm init
+$ npm install express --save
+
+
+http://www.nodeclipse.org/usage
+$ npm install
+$ npm start
+npm install fibers
+meteor update
