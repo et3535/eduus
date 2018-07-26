@@ -127,10 +127,14 @@
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/promise/0.11.1/web.browser/server.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/random/1.1.0/web.browser/random.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/random/1.1.0/web.browser/random_tests.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/reactive-dict/1.2.0/web.browser/migration.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/reactive-dict/1.2.0/web.browser/reactive-dict-tests.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/reactive-dict/1.2.0/web.browser/reactive-dict.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/reactive-var/1.0.11/web.browser/reactive-var.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/reload/1.2.0/web.browser/reload.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/reload/1.2.0/web.browser/reload_tests.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/retry/1.1.0/web.browser/retry.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/session/1.1.7/web.browser/session.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/socket-stream-client/0.2.2/web.browser/browser.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/socket-stream-client/0.2.2/web.browser/client-tests.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/socket-stream-client/0.2.2/web.browser/common.js" />
@@ -155,6 +159,8 @@
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/templating-tools/1.1.2/web.browser/throw-compile-error.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/tracker/1.2.0/web.browser/tracker.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/tracker/1.2.0/web.browser/tracker_tests.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/twbs_bootstrap/3.3.6/web.browser/dist/css/bootstrap.css" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/twbs_bootstrap/3.3.6/web.browser/dist/js/bootstrap.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/underscore/1.0.10/web.browser/post.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/underscore/1.0.10/web.browser/pre.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/underscore/1.0.10/web.browser/underscore.js" />
@@ -301,10 +307,14 @@
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/promise/0.11.1/web.browser/server.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/random/1.1.0/web.browser/random.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/random/1.1.0/web.browser/random_tests.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/reactive-dict/1.2.0/web.browser/migration.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/reactive-dict/1.2.0/web.browser/reactive-dict-tests.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/reactive-dict/1.2.0/web.browser/reactive-dict.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/reactive-var/1.0.11/web.browser/reactive-var.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/reload/1.2.0/web.browser/reload.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/reload/1.2.0/web.browser/reload_tests.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/retry/1.1.0/web.browser/retry.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/session/1.1.7/web.browser/session.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/socket-stream-client/0.2.2/web.browser/browser.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/socket-stream-client/0.2.2/web.browser/client-tests.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/socket-stream-client/0.2.2/web.browser/common.js" />
@@ -329,6 +339,8 @@
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/templating-tools/1.1.2/web.browser/throw-compile-error.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/tracker/1.2.0/web.browser/tracker.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/tracker/1.2.0/web.browser/tracker_tests.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/twbs_bootstrap/3.3.6/web.browser/dist/css/bootstrap.css" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/twbs_bootstrap/3.3.6/web.browser/dist/js/bootstrap.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/underscore/1.0.10/web.browser/post.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/underscore/1.0.10/web.browser/pre.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/underscore/1.0.10/web.browser/underscore.js" />
