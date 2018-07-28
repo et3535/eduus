@@ -1,0 +1,55 @@
+<template name="categorySubList">
+    <table class="table table-bordered table-condensed table-striped table-hover" name="tblname" id="tblname" value={{getctname}}>
+        <thead>
+        <tr><th>카테고리명</th><th>카테고리서브명</th><th colspan="2">Action</th></tr>
+        </thead>
+        <tbody>
+        {{#if list}}
+            {{#if subediting}}
+                {{#each value in list}}
+                    <tr class="info">
+                        <td><div class="edit-thing"  name="ctname" value={{getctname}}></div>{{getctname}}</td>
+                        <td><input type="text" style="width:100%" name="subctname" value={{value}}></td>
+                        <td style="display:none;"><input type="text" style="width:100%" name="bfsubctname" value={{value}}></td>
+                        <td><button class="btn btn-warning btn-sm" name="subsave"><i class="glyphicon glyphicon-ok"></i>저장</button></td>
+                        <td><button class="btn btn-info btn-sm" name="subcancle"><i class="glyphicon glyphicon-repeat"></i>취소</button></td>
+                    </tr>
+                {{/each}}
+            {{else}}
+                {{#each value in list}}
+                    <tr class="info">
+                        <td><div class="edit-thing" name="ctname" value={{getctname}}></div>{{getctname}}</td>
+                        <td><div class="edit-thing" name="subctname" value={{value}}></div>{{value}}</td>
+                        <td style="display:none;"><div class="edit-thing" name="bfsubctname" value={{value}}></div></td>
+                        <td><button class="btn btn-warning btn-sm" name="subremove" value={{value}}><i class="glyphicon glyphicon-trash"></i>삭제</button></td>
+                        <td><button class="btn btn-info btn-sm" name="submodify"><i class="glyphicon glyphicon-wrench"></i>수정</button></td>
+                    </tr>
+                {{/each}}
+            {{/if}}
+        {{else}}
+
+        {{/if}}
+
+        </tbody>
+    </table>
+</template>
+
+
+<template name="categorySubInput">
+    <div class="well">
+        <div class="form-inline">
+            <div class="form-group">
+                <!--<input type="text" class="form-control" name="ctname" placeholder="카테고리명" value={{getctname}}>
+                --><!--<div class="edit-thing" name="ctname" value={{getctname}}>{{getctname}}</div>-->
+
+                <input type="text" class="form-control" name="subctname" placeholder="카테고리서브명">
+                <button class="btn btn-info btn-sm" name="saveCategorySub">
+                    <i class="glyphicon glyphicon-ok"></i>등록
+                </button>
+                <button class="btn btn-info btn-sm" name="cancleCategorySub">
+                    <i class="glyphicon glyphicon-repeat"></i>취소
+                </button>
+            </div>
+        </div>
+    </div>
+</template>

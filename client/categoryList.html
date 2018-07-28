@@ -1,28 +1,37 @@
 <template name="categoryList">
-    <table class="table table-bordered table-condensed table-striped table-hover">
-        <thead>
+        {{#if subediting}}
+            {{> categoryInput}}
+            <table class="table table-bordered table-condensed table-striped table-hover">
+            <thead>
             <tr><th>카테고리명</th><th colspan="2">Action</th></tr>
-        </thead>
-        <tbody>
-        {{#if editing}}
-            {{#each list}}
-                <tr class="info">
-                    <td><div class="edit-thing" name="ctname">{{ctname}}</div></td>
-                    <td><button class="btn btn-warning btn-sm" name="remove"><i class="glyphicon glyphicon-trash"></i>삭제</button></td>
-                    <td><button class="btn btn-info btn-sm" name="modify"><i class="glyphicon glyphicon-wrench"></i>수정</button></td>
-                </tr>
-            {{/each}}
-         {{else}}
-            {{#each list}}
-                <tr class="info">
-                    <td><input type="text" style="width:100%" name="ctname" value={{ctname}}></td>
-                    <td><button class="btn btn-warning btn-sm" name="save"><i class="glyphicon glyphicon-ok"></i>저장</button></td>
-                    <td><button class="btn btn-info btn-sm" name="cancle"><i class="glyphicon glyphicon-repeat"></i>취소</button></td>
-                </tr>
-            {{/each}}
-         {{/if}}
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+            {{#if editing}}
+                {{#each list}}
+                    <tr class="info">
+                        <td><div class="edit-thing" name="ctname">{{ctname}}</div></td>
+                        <td><button class="btn btn-warning btn-sm" name="remove"><i class="glyphicon glyphicon-trash"></i>삭제</button></td>
+                        <td><button class="btn btn-info btn-sm" name="modify"><i class="glyphicon glyphicon-wrench"></i>수정</button></td>
+                    </tr>
+                {{/each}}
+            {{else}}
+                {{#each list}}
+                    <tr class="info">
+                        <td><input type="text" style="width:100%" name="modctname" value={{ctname}}></td>
+                        <td><button class="btn btn-warning btn-sm" name="save"><i class="glyphicon glyphicon-ok"></i>저장</button></td>
+                        <td><button class="btn btn-info btn-sm" name="cancle"><i class="glyphicon glyphicon-repeat"></i>취소</button></td>
+                    </tr>
+                {{/each}}
+            {{/if}}
+            </tbody>
+            </table>
+        {{else}}
+            <table class="table table-bordered table-condensed table-striped table-hover">
+            {{> categorySubInput}}
+            {{> categorySubList }}
+            </table>
+        {{/if}}
+
 </template>
 
 
@@ -38,3 +47,4 @@
         </div>
     </div>
 </template>
+

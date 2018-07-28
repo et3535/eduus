@@ -1,9 +1,12 @@
 Template.categoryList.helpers({
    list(){
-       return Category.find({},{limit:10,sort:{ctname:1}});
+       return Category.find({},{sort:{ctname:1}});
    },
     editing(){
        return this._id == Session.get("editItem");
+    },
+    subediting(){
+       return this._id == Session.get("subItem");
     }
 });
 Template.categoryList.events({
@@ -21,14 +24,16 @@ Template.categoryList.events({
        Session.set("editItem",null);
     },
     'click button[name=save]'(evt,tmpl){
-       Category.update({_id:this._id},{$set:{'ctname': tmpl.find("input[name=ctname]").value,'subctname' : this.subctname }},{upsert:true});
+       //alert(this._id+tmpl.find("input[name=modctname]").value);
+       Category.update({_id:this._id},{$set:{'ctname': tmpl.find("input[name=modctname]").value }});
        Session.set("editItem",null);
     },
-    'click tr'(evt,tmpl){
-       alert(this.ctname);
+    'click .edit-thing'(evt,tmpl){
+       Session.set("subItem",this._id);
+       Session.set("subtitlename",this.ctname);
+       Session.set('ctnameid',this._id);
     }
 });
-
 Template.categoryInput.events({
    'click button[name=saveCategory]'(evt,tmpl){
        var category = {
@@ -43,6 +48,7 @@ Template.categoryInput.events({
        }
    }
 });
+
 
 //db.getCollection('category').update({"ctname" : "프로그래밍"},{$set:{"subctname":"Clang"}},{upsert:true})
 //db.getCollection('category').update({"ctname" : "프로그래밍"},{$push:{"subctname":"CLANG"}},{upsert:true})

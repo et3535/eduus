@@ -1,0 +1,36 @@
+<template name="enroll">
+    <table class="table table-bordered table-condensed table-striped table-hover">
+        <thead>
+        <tr><th colspan="2">강의 등록 페이지!</th></tr>
+        </thead>
+        <tbody>
+        <tr class="info">
+            <td >URL :</td>
+            <td ><input type="text" name="urlinfo" placeholder="url 입력하세요" value="https://www.youtube.com/watch?v=4CbnWqRExmk"></td>
+        </tr>
+        <tr class="info">
+            <td >제목 :</td>
+            <td ><input type="text" name="urltitle" placeholder="제목"></td>
+        </tr>
+        <tr class="info">
+            <td >설명 :</td>
+            <td ><input type="text" name="urldesc" placeholder="설명"></td>
+        </tr>
+        <tr class="info">
+            <td >이미지 :</td>
+            <td ><input type="text" name="urlimage" placeholder="이미지"></td>
+        </tr>
+        <tr class="info">
+            <td >카테고리 :</td>
+            <td ><input type="text" name="category" placeholder="카테고리"></td>
+        </tr>
+        <tr class="info">
+            <td >하위카테고리 :</td>
+            <td ><input type="text" name="subcategory" placeholder="하위카테고리"></td>
+        </tr>
+        <tr><td><button class="btn btn-warning btn-sm" name="urlsave"><i class="glyphicon glyphicon-trash"></i>등록</button></td>
+            <td><button class="btn btn-info btn-sm" name="urlmodify"><i class="glyphicon glyphicon-wrench"></i>수정</button></td>
+        </tr>
+        </tbody>
+    </table>
+</template>
